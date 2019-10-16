@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="RewardX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BaU-q7-ldg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="131" id="wte-TE-fYW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn when you purchase, engage  and refer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuV-HN-7OO">
+                    <rect key="frame" x="10" y="155" width="355" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn reward tokens for every purchase " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BJ-bM-Rh6">
+                    <rect key="frame" x="10" y="193.5" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9BJ-bM-Rh6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="93J-On-e0W"/>
+                <constraint firstItem="BaU-q7-ldg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="EzV-Yh-336"/>
+                <constraint firstItem="DuV-HN-7OO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="SJ4-gt-WoK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9BJ-bM-Rh6" secondAttribute="trailing" constant="10" id="Tn2-Lq-IMk"/>
+                <constraint firstItem="BaU-q7-ldg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="WAL-6i-Hmp"/>
+                <constraint firstItem="9BJ-bM-Rh6" firstAttribute="top" secondItem="DuV-HN-7OO" secondAttribute="bottom" constant="18" id="ZSY-Mw-HQt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9BJ-bM-Rh6" secondAttribute="bottom" constant="20.5" id="gd0-Lk-wdr"/>
+                <constraint firstItem="DuV-HN-7OO" firstAttribute="top" secondItem="BaU-q7-ldg" secondAttribute="bottom" constant="24" id="lHM-HO-hAQ"/>
+                <constraint firstItem="BaU-q7-ldg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="p23-f6-JdN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DuV-HN-7OO" secondAttribute="trailing" constant="10" id="sfi-GR-qoH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imgSlider" destination="BaU-q7-ldg" id="cSS-o3-oQO"/>
+                <outlet property="lblFirstHint" destination="DuV-HN-7OO" id="u7A-5i-ifZ"/>
+                <outlet property="lblSecondHint" destination="9BJ-bM-Rh6" id="KwX-Gx-j73"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-40.029985007496258"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login Copy" translatesAutoresizingMaskIntoConstraints="NO" id="EDY-wY-6eG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-fashion-shopping-drawing-illustration-new-modern-shopping-women" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-ul-YwT">
+                                <rect key="frame" x="167" y="56" width="207.5" height="499"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hexagonal" translatesAutoresizingMaskIntoConstraints="NO" id="6ct-5p-LIf">
+                                <rect key="frame" x="10" y="293" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ajS-wD-juY"/>
+                                    <constraint firstAttribute="width" constant="40" id="f29-kQ-YZ6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RewardX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-nD-bOX">
+                                <rect key="frame" x="69" y="299" width="116" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Ozk-fp-Ofz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klT-sa-jda">
+                                <rect key="frame" x="205" y="596" width="132" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Xem-cq-cDr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Get started   -&gt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn reward token from your favorite brands for your everyday purchase " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dy-0s-aYl">
+                                <rect key="frame" x="19" y="342" width="139.5" height="101.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gEY-nD-bOX" firstAttribute="leading" secondItem="6ct-5p-LIf" secondAttribute="trailing" constant="19" id="1HM-wC-ysC"/>
+                            <constraint firstItem="EDY-wY-6eG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AkN-W7-Tiv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uca-ul-YwT" secondAttribute="trailing" constant="0.5" id="Fi7-1f-vMw"/>
+                            <constraint firstItem="EDY-wY-6eG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GKa-dN-tjp"/>
+                            <constraint firstItem="Uca-ul-YwT" firstAttribute="leading" secondItem="3dy-0s-aYl" secondAttribute="trailing" constant="8.5" id="GyC-ef-qNk"/>
+                            <constraint firstItem="EDY-wY-6eG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HjE-SE-ySc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="klT-sa-jda" secondAttribute="bottom" constant="36" id="Hu9-Dj-vUu"/>
+                            <constraint firstItem="klT-sa-jda" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="LDY-53-A9o"/>
+                            <constraint firstItem="gEY-nD-bOX" firstAttribute="top" secondItem="6ct-5p-LIf" secondAttribute="top" constant="6" id="M16-cw-Ebh"/>
+                            <constraint firstItem="klT-sa-jda" firstAttribute="top" secondItem="Uca-ul-YwT" secondAttribute="bottom" constant="41" id="NTz-g3-t0J"/>
+                            <constraint firstItem="Uca-ul-YwT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="OZf-hE-7Hj"/>
+                            <constraint firstItem="3dy-0s-aYl" firstAttribute="leading" secondItem="6ct-5p-LIf" secondAttribute="leading" constant="9" id="Viz-3X-m4H"/>
+                            <constraint firstItem="3dy-0s-aYl" firstAttribute="top" secondItem="6ct-5p-LIf" secondAttribute="top" constant="49" id="VwB-sO-UJm"/>
+                            <constraint firstItem="gEY-nD-bOX" firstAttribute="centerY" secondItem="EDY-wY-6eG" secondAttribute="centerY" constant="-31" id="lE0-6T-e9B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="klT-sa-jda" secondAttribute="trailing" constant="38" id="mCc-w8-InB"/>
+                            <constraint firstItem="EDY-wY-6eG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qqZ-SS-RvO"/>
+                            <constraint firstItem="Uca-ul-YwT" firstAttribute="leading" secondItem="gEY-nD-bOX" secondAttribute="trailing" constant="-18" id="tgm-Ps-e5V"/>
+                            <constraint firstItem="6ct-5p-LIf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="vOJ-rE-Sf5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Login Copy" width="720" height="1280"/>
+        <image name="hexagonal" width="204.80000305175781" height="204.80000305175781"/>
+        <image name="kisspng-fashion-shopping-drawing-illustration-new-modern-shopping-women" width="374" height="1082"/>
+    </resources>
+</document>

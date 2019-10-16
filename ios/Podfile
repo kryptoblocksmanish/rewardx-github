@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'RewardX' do
+pod 'GoogleSignIn'
+pod 'SideMenu'
+pod 'IQKeyboardManagerSwift'
+pod 'NextResponderTextField'
+
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for RewardX
+
+  target 'RewardXTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'RewardXUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
